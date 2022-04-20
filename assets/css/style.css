@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Heebo', sans-serif;
+
+  --primary: #00203fff;
+  --secondary: #adefd1ff;
+  --supporting: #b6ddbe;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 0.2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary);
+  filter: drop-shadow(1px 1px 5px black);
+}
+
+.logo {
+  color: var(--secondary);
+  font-size: 2.5rem;
+  font-family: 'Leckerli One', cursive;
+  text-shadow: 0 0 2px white;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.desktop-nav a {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  transition: all 0.1s ease-in;
+}
+
+.desktop-nav a:hover {
+  color: var(--supporting);
+}
+
+.desktop-nav li::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  background: #fff;
+  height: 1px;
+  width: 0%;
+  transition: all 0.1s ease-in;
+}
+
+.desktop-nav li:hover::after {
+  width: 100%;
+}
